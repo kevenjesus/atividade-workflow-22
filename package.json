@@ -1,0 +1,22 @@
+{
+  "name": "atividade-workflow",
+  "version": "1.0.0",
+  "description": "Atividade do módulo Workflow",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sacchettijr/atividade-workflow.git"
+  },
+  "author": "Sergio Sacchetti Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sacchettijr/atividade-workflow/issues"
+  },
+  "homepage": "https://github.com/sacchettijr/atividade-workflow#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
