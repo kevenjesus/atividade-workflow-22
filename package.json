@@ -18,6 +18,7 @@
   "homepage": "https://github.com/sacchettijr/atividade-workflow#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
   }

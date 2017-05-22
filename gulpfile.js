@@ -6,6 +6,7 @@
 var gulp 	= require('gulp');
 var sass 	= require('gulp-sass');
 var rename 	= require('gulp-rename');
+var htmlmin = require('gulp-htmlmin');
 
 //Arquivos a serem compilado/Minificado
 var scssArq	= './source/scss/*.scss';
