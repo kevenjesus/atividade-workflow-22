@@ -44,21 +44,20 @@ gulp.task('sassdev', function(){
 gulp.task('sassprod', function(){
 	return gulp.src(scssArq)
 		.pipe(sass(prodOptions).on('error',sass.logError))
-		.pipe(rename(minify.min.css))
 		.pipe(gulp.dest(cssDest));
 });
 
 //Minificar e renomear o index.html
 gulp.task('minifyhtml', function(){
-    gulp.src(indexArq)
+   return gulp.src(indexArq)
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(rename(index.min.html))
         .pipe(gulp.dest(indexDest))
 });
 
 //Tarefa Watch
 gulp.task('watch', function(){
-	gulp.watch(scssArq, indexArq, ['sassprod', 'sassdev', 'minifyhtml']);
+	gulp.watch(scssArq, ['sassdev']);
+	gulp.watch(indexArq, ['minifyhtml']);
 });
 
 //Tarefa padrão para o comando 'gulp'
